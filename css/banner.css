@@ -1,0 +1,13 @@
+#cookie-banner  {
+    /*background: linear-gradient(to right, #141517, #3b1391);*/
+    background: #3b1391;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    padding: 5px;
+    line-height: 20px;
+    margin: 4px 0px 4px 0px;
+    display: none;
+}

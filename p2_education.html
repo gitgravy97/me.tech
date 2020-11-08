@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- The self-made style sheet import -->
+    <link rel="stylesheet" type="text/css" href="css/stylish.css">
+    <link rel="stylesheet" type="text/css" href="css/print.css">
+    <link rel="stylesheet" type="text/css" href="css/accordion.css">
+    <!-- <script src="js/accordion.js"></script> -->
+    
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259283-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-138259283-1');
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/cookie-banner.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/banner.css">
+    <title>Education</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="skip-to-cont" href=#content>Skip to Content</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="p2_education.html" class="current">Education</a></li>
+                <li><a href="p3_employment.html">Work Experience</a></li>
+                <li><a href="p4_skills.html">Skills, Interests, & Aspirations</a></li>
+                <li><a href="p5_contact.html">Contact</a></li>
+                <li><a href="p6_gallery.html">Gallery</a></li>
+                <li><a href="p7_projects.html">Projects & Visualizations</a></li>
+            </ul>
+        </nav>
+        
+        <h1 class="header-title">Education</h1>
+        <!--| Retain banner line(/s) incase needed later for fulltime |-->
+        <!--| <div id="cookie-banner"><p>Interested? I'm still seeking summer internship; consider reaching out via the contacts page!</p></div> |-->
+        <img id="go-blue-stretch-banner" src="images/go_blue_long.jpg" alt="Go Blue">
+    </header>
+
+    <main id="content">
+
+    <div id="academic-institutions">
+        <h2>Academic History & Performance</h2>
+        <div id="academic-institutions-container">
+            <div class="collegiate-entry">
+                <h3>University of Michigan</h3>
+                <p>Attendance: Sept 2015 - May 2020<br>
+                <p>Program: Bachelors of Science in Information Systems<br>
+                <p>Cumulative GPA: 3.20<br>
+                <p>Major GPA: 3.91</p>
+                
+                <div id="academic-plots">
+                    <iframe width="600" height="400" frameborder="1" scrolling="no" lang="en"
+                    title="Cumulative GPA Over Time - Plotly Line Graph"
+                    src="https://plot.ly/~mcshaned/61.embed"></iframe>
+                </div>
+            <div class="collegiate-entry">
+                <h3>Saint Clair County Community College</h3>
+                <p>Attendance: Sept 2013 - May 2015<br>
+                <p>Program: CL5 Early-College Dual-Enrollment<br>
+                <p>GPA: 4.00</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="current-courses">
+            <h2>Current Educational Focuses:</h2>
+            <ul>
+                <li>Continue Studying Algorithms</li>
+                <li>Resume Study of Javascript</li>
+                <ul
+                    ><li>Also: Learn React and React Native</li>
+                </ul>
+                <li>Review C++</li>
+            </ul>
+            </div>
+
+    <div id="major-courses">
+    <h2>Undergraduate Informatics Program Courses Completed</h2>
+
+        <button class="accordion">SI 106: Programs, Information, and People (Introductory)</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2017</p>
+        <p><b>Reason:</b> I was curious what the "School of Information" was all about, was curious about working with API's,
+            and figured it would be useful to learn Python.</p>
+        <p><b>Learned:</b> Basic Python Functionality, API Skills, Data Analysis Skills</p>
+        <p><b>Skills:</b> Python, API Usage, Data Analysis</p>
+        </div>
+    
+        <button class="accordion">SI 110: Introduction to Information Studies</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2017</p>
+        <p><b>Reason:</b> I was curious what the "School of Information" was all about and I'm also a history and social-studies geek,
+            so in addition to being a program-application prerequisite course, it also just seemed really fascinating.</p>
+        <p><b>Learned:</b> A great deal about information history, modern issues in information science/studies,
+            and both the opportunities within the BSI program and for its graduates. This would also be my first exposure to
+            both social media and user-experience studies, topics that, while not my career emphasis, still greatly interest me.</p>
+        <p><b>Skills:</b> Frameworks for User Experience Analysis & Research, Frameworks for Social Media Analysis & Research</p>
+        </div>
+
+        <button class="accordion">SI 206: Data-Oriented Programming (Intermediate)</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2018</p>
+        <p><b>Reason:</b> I really enjoyed SI 106 and this course's description included some really interesting topics I had no
+            experience or background working with.</p>
+        <p><b>Learned:</b> In addition to solidifying my understanding of unit testing and Git for version management,
+            I learned a lot about databases, how to use API's that required OAuth or keys for access,
+            and my favorite topic was easily web crawling+scraping.</p>
+        <p><b>Skills:</b> Python, SQL, SQLite3, Databases, Web Crawler Design, Web Scraping Principles, OAuth</p>
+        </div>
+
+        <button class="accordion">SI 300: Career & Internship Studio</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2018</p>
+        <p><b>Reason:</b> Required for BSI Admits</p>
+        <p><b>Learned:</b> Fundamentals of navigating recruitment processes for internships and postgraduate employment.</p>
+        <p><b>Skills:</b> Communication, Networking</p>
+        </div>
+
+        <button class="accordion">SI 301: Models of Social Information</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2018</p>
+        <p><b>Reason:</b> Required, but also extremely interesting topic-wise</p>
+        <p><b>Learned:</b> A diverse-enough range of topics to justify a list:</p>
+        <ul>
+            <li>networks (with an emphasis on social networks) including structural properties,
+                breadth-first search, homophily, affiliations, network exchange experiments, etc.</li>
+            <li>game theory, strategic dominance, Nash equilibria</li>
+            <li>network traffic in particular and Braess' Paradox</li>
+            <li>auctions, bipartite graphs, bipartite matching problems, applications in markets
+                and finding market-clearing prices</li>
+            <li>PageRank, the Hyperlink-Induced Topic Search ("HITS") algorithm,
+                web-content popularity, degree distributions, and the rich-get-richer model</li>
+            <li>modeling informatic and behavioral cascades</li>
+        </ul>
+        <p><b>Skills:</b> Network/Graph Theory, Game Theory, Modeling Logic</p>
+        </div>
+
+        <button class="accordion">SI 310: Information Environments & Work</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2018</p>
+        <p><b>Reason:</b> Required for BSI Admits</p>
+            <!-- Underline S, D, L, C below to visually define later-used standard abbreviation SDLC to unfamiliar audiences -->
+        <p><b>Learned:</b> Ultimately, the course ended up a blend of consulting foundations, exposure to different
+            <u>s</u>oftware <u>d</u>evelopment <u>l</u>ife <u>c</u>ycle models (Agile, Iterative, Spiral, Waterfall),
+            and discussion of how information professionals integrate into various enterprises. In-class lectures effectively
+            focused on career strategy, while discussion sections focused on our weekly casework.</p>
+        <p><b>Skills:</b> Consulting Principles, SDLC Models (Agile, Iterative, Spiral, Waterfall)</p>
+        </div>
+
+        <button class="accordion">SI 320: Graphic Design / Visual Communication</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2020</p>
+        <p><b>Reason:</b> I wanted to try something way, way outside my normal comfort zone</p>
+        <p><b>Learned:</b> I learned a ton about modern graphic design methodologies and various odds-and-ends of human psychology, especially dealing with perception and Gestalt principles.<br>
+        We built a lot in the course and were encouraged to try a variety of industry-standard design tools by Adobe, including Photoshop, Illustrator, and XD.</p>
+        <p><b>Skills:</b> Graphic Design, Adobe Photoshop, Adobe Illustrator, Adobe XD</p>
+        </div>
+
+        <button class="accordion">SI 330: Data Manipulation</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2018</p>
+        <p><b>Reason:</b> Sheer Interest + Career Intentions</p>
+        <p><b>Learned:</b> More SQL, Pandas, Regular Expressions ("RegEx"), Basic NLP, Amazon Web Services (Lambda,
+            API Deployment), how to work with Resilient Distributed Datasets (RDD's) and Map/Reduce with PySpark,
+            more methods for data acquisition, manipulation, and visualization.</p>
+        <p><b>Skills:</b> SQL, Python, Pandas, RegEx, NLP, AWS, Distributed Computation, PySpark</p>
+        </div>
+
+        <button class="accordion">SI 334: Persuasion & Social Influence</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2018</p>
+        <p><b>Reason:</b> Curiousity about the intersectionality between human behavior and
+            human-applied processing of social information</p>
+        <p><b>Learned:</b> a lot about humans' comparative tendencies, biases, and differential information reception
+            relative to diverse situational factors.</p>
+        <p><b>Skills:</b> Social Psychology, Understanding of Human / Consumer Behavior</p>
+        </div>
+
+        <button class="accordion">SI 339: Web Design & Accessibility</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2019</p>
+        <p><b>Reason:</b> Intellectual curiousity regarding how the internet and websites work </p>
+        <p><b>Learned:</b> How websites work, how they can be designed, kept readable, made interactive, and meet accessibility standards</p>
+        <p><b>Skills:</b> HTML, CSS, JS, JQuery, Web Accessibility & Standards Understanding</p>
+        </div>
+
+        <button class="accordion">SI 364: Database-Drive Web Applications</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2019</p>
+        <p><b>Reason:</b> Curiousity</p>
+        <p><b>Learned:</b> How database-driven web applications work + how to build them with Python & Django</p>
+        <p><b>Skills:</b> Django</p>
+        </div>
+
+        <button class="accordion">SI 370: Exploratory Data Analysis</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2019</p>
+        <p><b>Reason:</b> Interest in Machine Learning, Data Visualization & Exploration</p>
+        <p><b>Learned:</b> A lot about:</p>
+        <ul>
+            <li>Effective Approaches to Data Visualization</li>
+            <li>Overview of Machine Learning & ML Models</li>
+            <li>Collaborative Coding & Kaggle Competition Coordination</li>
+        </ul>
+        <p><b>Skills:</b> Data Visualization, Machine Learning</p>
+        </div>
+
+        <button class="accordion">SI 425: Introduction to User Modeling</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2019</p>
+        <p><b>Reason:</b> Interest in Corporate Applications of Data Science & Behavioral Economics</p>
+        <p><b>Learned:</b> How data and economics can strategically collide, as well as how economic theory and data-oriented profiling techniques influence structure of / design choices within sociotechnical systems</p>
+        <p><b>Skills:</b> Behavioral Economics</p>
+        </div>
+
+        <button class="accordion">SI 429: Understanding Online Communities</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2017</p>
+        <p><b>Reason:</b> Curiousity about Social Media Research</p>
+        <p><b>Learned:</b> about normative issues within online communities as well as methods for designing interventions
+            and also a lot about research ethics within social media studies.</p>
+        <p><b>Skills:</b> Social Media Research Ethics, Social Media Design Concepts, Product Troubleshooting Principles</p>
+        </div>
+
+        <button class="accordion">SI 485: BSI Information Analytics Capstone</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2020</p>
+        <p><b>Reason:</b> Final Graduation Project / Requirement</p>
+        <p><b>Learned:</b> so, so, so much about collaborating with very different coworker personalities and managing a workgroup's relationship with their client, assessing client needs, worktype scheduling hierarchies,
+        and also how to reorganize collaboration during a global (covid19) epidemic.</p>
+        <p><b>Skills:</b> Team & Client Coordination, Team & Client Communication, Management</p>
+        </div>
+    </div>
+
+    <div id="non-major-courses">
+        <h2>Other Interesting Courses:</h2>
+        <p>(Note: Not an exhaustive transcript)</p>
+        
+        <button class="accordion">ARTDES 240: 3D Modeling & Animation</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter 2016</p>
+        <p><b>Reason:</b> Interest in Computer-Aided Design, 3D Modeling, Animation</p>
+        <p><b>Learned:</b> Modeling & Animation Skills, AutoDesk 3DS Max.</p>
+        </div>
+        
+        <button class="accordion">EECS 183: Elementary Programming Concepts</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2015</p>
+        <p><b>Reason:</b> Interest in Computational Studies / Sciences & Programming Applications</p>
+        <p><b>Learned:</b> Fundamentals of Programming (Primarily with C and C++)</p>
+        </div>
+        
+        <button class="accordion">EECS 280: Programming & Data Structures</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2016</p>
+        <p><b>Reason:</b> Continued Interest In Computational Sciences & Programming Applications</p>
+        <p><b>Learned:</b> More about C and C++, Object-Oriented and Dynamic Programing, Data Structures</p>
+        </div>
+        
+        <button class="accordion">ENTR 410: Finding Your Venture</button>
+        <div class="panel">
+        <p><b>Taken:</b> Winter of 2018</p>
+        <p><b>Reason:</b> Curiousity towards Business, Interest in Fundamental Business Literacy</p>
+        <p><b>Learned:</b> Fundamentals of Entrepreneurship, Venture Funding, Management Structures, Approaches to B2B Product Ideation,
+            Customer/User Interview Practices, Minimum Viable Product Design, Product Pitching</p>
+        </div>
+        
+        <button class="accordion">German 232: German Through News Media</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2017</p>
+        <p><b>Reason:</b> Passion for Foreign Languages, Interest in German Culture & International News</p>
+        <p><b>Learned:</b> How to handle regular exposure to unique, often-independent topics and content in German.</p>
+        </div>
+        
+        <button class="accordion">Stats 250: Introduction to Statistics & Data Analysis</button>
+        <div class="panel">
+        <p><b>Taken:</b> Fall of 2017</p>
+        <p><b>Reason:</b> It's extremely fundamental for so many reasons</p>
+        <p><b>Learned:</b> Principles of Statistics / Statistical Analysis, Basics of R
+            (albeit primarily via interfacing with package RCommander)</p>
+        </div>
+    </div>
+
+    <!--
+    <div id="online-courses">
+    <h2>Online Courses</h2>
+    <ul>
+        <li>(Coursera) - Introduction to HTML5</li>
+        <li>(DataCamp) - Intro to Python for Data Science</li>
+        <li>(DataCamp) - Intro to SQL for Data Science</li>
+    </ul>
+    -->
+    </div>
+
+    </main>
+<footer>
+</footer>
+
+<!-- LEAVE THIS LINE DOWN HERE. Otherwise issues come up with loading the script in-time -->
+<!-- and then you get some console errors and the accordion partially breaks-->
+<script src="js/accordion.js"></script>
+<!-- <script src="js/cookie-banner.js"></script>-->
+
+</body>
+</html>

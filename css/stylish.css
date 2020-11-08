@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Noto%20Serif');
+
+body {
+    font-family: 'Noto Serif';font-size: 16px;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: scroll;
+	background-color: rgb(51,51,51);
+}
+  
+nav li {
+    /* Anchoring side on-screen */
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+  
+nav li a {
+    display: block;
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 14px 16px;
+    /*removes link underline*/
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: rgb(0,0,0);
+}
+
+nav li a:focus {
+    background-color: rgb(0,0,0);
+}
+
+nav li a:focus.current {
+    color: rgb(255,255,255)
+}
+
+nav li a.current {
+    background: rgb(255, 178, 10);
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    /* slightly-increases distance between text and underline */
+    /* aesthetically-preferrable but not very well-supported on mobile browsers */
+    text-underline-position: under;
+}
+
+header h1{
+    color: rgb(0,0,0);
+    border-style: solid;
+    display: block;
+    padding: 3px;
+    text-decoration: underline;
+}
+
+/* See NCSU link in ReadMe regarding implementation */
+a.skip-to-cont {
+    left:-999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow:hidden;
+    color: rgb(255,0,0);
+}
+
+a.skip-to-cont:focus, a.skip-to-cont:active{
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    padding: 5px;
+}
+
+/* Gallery Code */
+@media only screen and (min-width: 1000px){
+    .grid-container-gallery{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 2px;
+    }
+    .grid-container-gallery img {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    .grid-container-gallery{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2px;
+    }
+    .grid-container-gallery img {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .grid-container-gallery{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 2px;
+    }
+    .grid-container-gallery img {
+        width:100%;
+        height: auto;
+    }
+}
+/* End: Gallery Code */
+
+
+.grid-container-skills{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2px;
+}
+.grid-container-skills img{
+    width:100%;
+}
+
+/* Specifically for the staff photos on the employment page */
+.flex-container-staff-photos{
+    display: flex;
+    grid-template-columns: auto;
+    grid-gap: 2px;
+}
+.flex-container-staff-photos img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+.flex-container-current-employment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* for employment page */
+.job-panel {
+    /*background-color: rgb(221,224,223);*/
+    /*background-color: #2C75FF;*/
+    background-color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+/* Font Awesome */
+.fas {
+    background-color: #ffcb05;
+    padding: 2px;
+    border-style: solid;
+}
+
+.collegiate-entry{
+    border-style: solid;
+    border-width: 2px;
+    margin: 2px;
+}
+
+.collegiate-entry p{
+    margin: 3px;
+    padding: 1px;
+}
+
+.collegiate-entry h3{
+    margin: 5px;
+    padding: 3px;
+}
+
+.header-title {
+    background-image: url("../images/backgrounds/stonehaven.png");
+    background-color: #FFFFFF;
+}
+
+#go-blue-stretch-banner {
+    width: 100%;
+    height: auto;
+}
+
+#academic-plots img{
+    display: inline-block;
+}
+
+.collegiate-entry iframe{
+    width: 99%;
+    height: 400px;
+}
+
+#contact-forum-purpose{
+    width: 40%;
+    height: auto;
+}
+
+footer p{
+    bottom: 0;
+    border-top: 3px double #000000;
+    position: absolute;
+
+}
+
+h2{
+    margin-bottom: 1px;
+}
+
+ul{
+    margin-top: 6px;
+}

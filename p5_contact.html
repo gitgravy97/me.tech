@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- The self-made style sheet import -->
+    <link rel="stylesheet" type="text/css" href="css/stylish.css">
+    <link rel="stylesheet" type="text/css" href="css/print.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259283-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-138259283-1');
+    </script>
+
+    <!-- For form validation -->
+    <script>
+        function formValidation() {
+            // Screening for name entry
+            var entry_name = document.forms["contact-form"]["name"].value;
+            console.log("Name: ", entry_name);
+            if(entry_name === ""){
+                alert("A name must be provided.");
+                return false;
+            }
+            // Screening for email address entry
+            var return_email = document.forms["contact-form"]["_replyto"].value;
+            console.log("Return address: ", return_email);
+            if(return_email === ""){
+                alert("A return email address must be provided for response.");
+                return false;
+            }
+            // Screening for statement of purpose entry
+            var intent = document.forms["contact-form"]["purpose"].value;
+            console.log("Statement of purpose/intent: ",intent);
+            if(intent === ""){
+                alert("A statement of purpose must be provided");
+                return false;
+            }
+        }
+    </script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="skip-to-cont" href=#content>Skip to Content</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="p2_education.html">Education</a></li>
+                <li><a href="p3_employment.html">Work Experience</a></li>
+                <li><a href="p4_skills.html">Skills, Interests, & Aspirations</a></li>
+                <li><a href="p5_contact.html" class="current">Contact</a></li>
+                <li><a href="p6_gallery.html">Gallery</a></li>
+                <li><a href="p7_projects.html">Projects & Visualizations</a></li>
+            </ul>
+        </nav>
+        <h1 class="header-title">Contact</h1>
+    </header>
+
+    <main id="content">
+        <p>Interested in reaching out? Need some code? Want to discuss professional opportunities or just geek out?</p>
+        <p>Check out my Linked-In below:</p>
+        <br>
+
+        <div id="contact-icon-row">
+        <a href="https://www.linkedin.com/in/mccoy-doherty-823342157/">
+            <img src="images/LinkedIn.png" alt="Linked-In Link" height="70" width="80">
+        </a>
+        </div>        
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

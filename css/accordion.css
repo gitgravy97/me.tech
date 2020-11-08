@@ -1,0 +1,28 @@
+.accordion {
+    background-color: #00274c;
+    color: #eeeeee;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    border: solid;
+    border-width: 2px;
+    border-color: #000000;
+}
+
+.active, .accordion:hover, accordian:focus {
+    color: #ffcb05;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border: solid;
+    border-width: 1px;
+    border-color: #00274c;
+}
