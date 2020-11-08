@@ -55,6 +55,20 @@ header h1{
     text-decoration: underline;
 }
 
+.project-section{
+    color: rgb(0,0,0);
+    border-style: solid;
+    display: block;
+    padding: 3px;
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.header-title {
+    background-image: url("../images/backgrounds/stonehaven.png");
+    background-color: #FFFFFF;
+}
+
 /* See NCSU link in ReadMe regarding implementation */
 a.skip-to-cont {
     left:-999px;
@@ -177,10 +191,7 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
     padding: 3px;
 }
 
-.header-title {
-    background-image: url("../images/backgrounds/stonehaven.png");
-    background-color: #FFFFFF;
-}
+
 
 #go-blue-stretch-banner {
     width: 100%;

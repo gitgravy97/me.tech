@@ -17,7 +17,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-138259283-1');
     </script>
-    <title>Projects & Visualizations</title>
+    <title>Projects & Visualizations</title> 
 </head>
 <body>
     <header>
@@ -37,8 +37,70 @@
     </header>
 
     <main id="content">
+    <h1 class="project-section">Active / In-Development Projects</h1>
 
     <div class="project-entry">
+        <h2>Wolverine Watchdog</h2>
+        <p><b>What:</b>Wolverine Watchdog started as a COVID-summer aspiration to teach myself more about modern web-development and is 
+        effectively a platform intended to help users be able to more-flexibly query, access, map, and explore a large corpus of crime /
+        "fire and safety" data published about incidents on the properties of the University of Michigan's Ann Arbor campuses. The data 
+        ranges back to January of 2000, but was initially provided on a far more cumbersome and restrictive platform. I am in the process
+        of gathering the data into a MongoDB and making it more accessible and interactive for members of the community that may be able 
+        to extrapolate greater utility from this local, interesting, safety-oriented dataset.</p>
+        <p><b>Why:</b>I'm chronically fascinated with legal and criminal studies, love the campus community, and remember mentioning
+        the thought of this project once to a colleague working in the Housing/dormitory staff, who seemed genuinely both interested 
+        and excited at the idea of something like this existing, so now I'm working on actually making it.</p>
+        <p><b>How:</b>React for front-end, Node for the back-end, Express for API work, and MongoDB for storage.</p>
+        <p><b>Can I See It:</b>Yeah, though development's been on hiatus due to school, I'm planning to deploy publically in
+            either December 2020 or January 2021</p>
+    </div>
+    <hr>
+
+    <div class="project-entry">
+        <h2>Git-Job</h2>
+        <p><b>What:</b>Co-developing a specialized search engine tailored to helping one find tech-sector jobs that better match their 
+        qualifications, both based on what they report having, and what they report not having. We hope to distinguish our engine by
+        doing more intense feature-extraction from job-posting descriptions, providing novel filter options to end-users, and a unique
+        query operator.</p>
+        <p><b>Why:</b>Colleagues and I grow tired of excitedly reading cool "Entry Level" jobs that ask for require criteria in the end that
+        one can't simply filter out in other job-search engines, such as needing a PhD, familiarity with a specific language, or citizenship.</p>
+        <p><b>How:</b>We're in the earlier phases currently and doing a lot of exploratory work in Python. Ultimately, we're 
+        hoping for this to be a live web application. We've done enough literature review to realize just how many unique and interesting approaches
+        there can be within this space, especially in ranking methodology and in feature extraction.</p>
+        <p><b>When Can I See It:</b> We're hoping to have this as a live web application by December 2020. We're sourcing the job posting data from
+        another platform and are trying to figure out if we can reasonably use this on live data all the way or if we'll have to constrict it to a large
+        corpus of more static data as just a proof-of-concept, which would definitely be easier but less-than-ideal, and frankly less fun.</p>
+    </div>
+    <hr>
+
+    <div class="project-entry">
+        <h2>Exploring Consumer Review E-Fraud</h2>
+        <p><b>What:</b>A colleague and I are working on mining a corpus of user-sourced product reviews provided by a major ecommerce platform,
+            which are labelled as either legitimate or fraudulent. We are looking to find patterns in the textual composition of real and fake
+            reviews to assist with training fraud-detection models to recognize e-commerce product/service-review fraud.</p>
+        <p><b>Why:</b>Moreso now than in prior years, anecdotally, I've been observing more bots than ever before on social platforms, and seeing 
+            more allegations on consumer e-commerce platforms / review systems of falsified reviews. Considering how important e-commerce is, 
+        especially in this COVID19 era where people engage with online shopping more than ever before, this seemed not only an interesting challenge,
+        but a potentially impactful line of study.</p>
+        <p><b>How:</b>We're currently working on that, but initially, a lot of literature review. More often than not, it seems literature in this
+        space focuses on a blend of textual analysis with user-behavioral / metadata analysis, however we only have textual data at our disposal, so
+        we are focusing heavily on feature extraction and comparison along many, many features in this early phase. Updates to come.</p>
+    </div>
+    <hr>
+
+    <div class="project-entry">
+        <h2>PNC Bank - Product-Centric Qualitative Consulting</h2>
+        <p><b>What:</b>With a team of other students in my consulting course, we are working (under NDA) in order to propose carefully-thought-out
+            and well-contextualized recommendations to guide the continued improvement of a proprietary client-facing portal.</p>
+        <p><b>Why:</b>Desire to experience facillitating better user-experience development in a significant client-facing product</p>
+        <p><b>How:</b>Largely, a combination of literature review / background research, conducting a series of qualitative interviews, careful notetaking,
+        and the modeling of systemic relationships and processes</p>
+    </div>
+
+    <h1 class="project-section">Former Projects</h1>
+    
+    <div class="project-entry">
+
     <h2>Senior Capstone Project -- Unemployment Tracker</h2>
     <p>
         <b>What:</b> Working with a team of two other graduating seniors in the informatics program's data analytics subconcentration, we were assigned a client and final project.
@@ -55,8 +117,10 @@
     <div class="project-entry">
     <h2>Kaggle Competition -- San Francisco Crime Classification</h2>
     <p>
-        <b>What:</b> Working with four classmates in (SI370) Exploratory Data Analysis, we built a project for the <a href="https://www.kaggle.com/c/sf-crime/data">San Francisco Crime Classification</a> Kaggle competition.<br>
-        In addition to a ML classifier that can predict the category of a given crime (from a pool of 39 established categories) based largely on temporal and geolocational data, we have built out interactive maps to visualize the data.
+        <b>What:</b> Working with four classmates in our Exploratory Data Analysis class, we built a project for the 
+        <a href="https://www.kaggle.com/c/sf-crime/data">San Francisco Crime Classification</a> Kaggle competition.<br>
+        In addition to a ML classifier that can predict the category of a given crime (from a pool of 39 established categories) based
+        largely on temporal and geolocational data, we have built out interactive maps to visualize the data.
     </p>
     <p><b>Why:</b> Group selection-by-vote and a rather mutual interest in criminal data</p>
     <p><b>
@@ -68,14 +132,15 @@
     <hr>
 
     <div class="project-entry">
-    <h2>Michigan Cannabis Market Research</h2>
-    <p>
-        <b>What:</b> I aggregated publicly-available data regarding dispensary product offerings and pricing for four Michigan localities:
-        Ann Arbor, Bay City, East Lansing, and Flint. I used these aggregates to create the visualizations linked below.
-    </p>
-    <p><b>Why:</b> Aside from Michigan having an active proposal at the time (Prop1) to recreationally legalize cannabis, I was getting curious about investment and a friend mentioned that
-    they were part of a fund that was open to considering students as new members, but was a fund that focused specifically on cannabis venture investment. I realized I had absolutely no idea what
-    dispensaries actually sold, so I decided to do a project to investigate product diversity by mining online menu data.</p>
+    <h2>Ross School of Business - Green Wolverine Fund Application Adjunct - Market Research</h2>
+    <p><b>What:</b> I aggregated publicly-available data regarding dispensary product offerings and pricing for four Michigan localities:
+        Ann Arbor, Bay City, East Lansing, and Flint. I used these aggregates to create the visualizations linked below.</p>
+    <p><b>Why:</b> I was interested in joining a student investment-fund and discovered as a non-business major looking to join in winter semester, one of the few options
+        available was through the Green Wolverine Fund run out of Ross School of Business, which specialized in cannabis investments. Knowing little about both finance and
+        the cannabis sector, as part of the competitive application process I chose to prove my tech skills could be beneficial to the fund by conducting a difficult
+        web-scraping job of a specialized domain-specific ecommerce hub where legal operations posted their "menu" of inventory and price-points.</p>
+    <p><b>Sidenote:</b> This is also the first scraping project so involved that I had to learn to utilize Selenium's web-driver library to deal with issues like
+    javascript-based elemental load-in, scroll-limited load-in, and process-disruptive pop-ups.</p>
     <p><b>Experience:</b></p>
     <ul>
         <li>Visual 1: <a href="https://plot.ly/~mcshaned/12/herb-type-distribution-by-city/#/">
@@ -89,24 +154,7 @@
         <li>Visual 5: <a href="https://plot.ly/~mcshaned/18/traditional-herb-vs-alternative-cannabis-products/#/">
             Conventional Dry-Herb Product V. Alternative-Intake Methods (Concentrates, Topicals, Edibles, etc.)</a></li>
     </ul>
-    <p>Source Code: Not Publicly Available (Ah, the classic tragedy of writing scrape-code for very-rapidly-changing websites)</p>
-    </div>
-
-    <hr>
-
-    <div class="project-entry">
-    <h2>DPSS Data Analysis</h2>
-    <p><b>Note:</b> I've actually decided to rewrite this project this summer and host it online, time permitting, because my old implementation was dicey and also not-publicly-hosted anywhere.</p>
-    <p>
-        <b>What:</b> I collected ~2-3 years worth of public-disclosure data published by campus law enforcement.<br>
-        I tagged incident reports based on crime type and location to understand what types of crime were most common on campus,
-        as well as which dorms had the most incident reports tagged to their building
-    </p>
-    <p><b>Why:</b> I've always been fascinated with law and crime. I've also been living on campus for most of my university experience.</p>
-    <p><b>
-        How:</b> Python used to collect data from API, mapped and reduced crime types due to variable naming conventions,
-        Flask used for making the application
-    </p>
+    <p>Source Code: Deprecated (numerous structural changes have occurred on the target platform)</p>
     </div>
 
     </main>
