@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282C34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Collapsible {
+  background-Color: #00274C;
+  color: #FFFFFF;
+  border: 2px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 4px; padding-bottom: 0px;
+  padding-left: 0px; padding-right: 0px;
+  margin-bottom: 0px;
+}
+
+.Collapsible__contentInner {
+  background-Color: #FFFFFF;
+  color: #000000;
+  padding-top: 4px; padding-bottom: 8px;
+  padding-left: 8px; padding-right: 8px;
+  margin: 0px;
+}
+
+.Collapsible__contentOuter p { margin: 2px }
+.Collapsible__trigger {
+  font-size: 13.33pt;
+  padding-left: 8px;
+}
+
+/* May need some later refining */
+.Collapsible__trigger:focus, .Collapsible__trigger:hover,
+.Collapsible__trigger:active, .Collapsible__trigger.is-open {
+  color: #FFCB05;
+}
+
+div h2 { font-size: 1.90rem }
+
+div h3 { font-size: 1.60rem }
+
+div hr { 
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+/* Font Awesome Icons*/
+.fas {
+  background-color: #ffcb05;
+  border: 2px solid black;
+  display: inline;
+  padding: 4px;
+  margin-bottom: 4px;
+  margin-top:10px;
+}
+
+.job-panel{
+  background-color: rgb(255,255,255);
+  border-style: solid;
+  border-width: 3px;
+  padding-left: 10px; padding-right: 10px;
+  margin-top: 5px; margin-bottom: 5px;
+  margin-left: 0px; margin-right: 5px;
+}
+
+.job-panel p { margin-bottom: 10px }
+
+.job-panel h3 {
+  display: inline;
+  font-size: 1.60rem;
+  margin-top: 8px; margin-bottom: 4px;
+  margin-left: 8px; margin-right: 4px;
+}
+
+.page-title {
+  background-image: url("images/titlebacker.png");
+  border: 2px solid black;
+  font-size: 2.20rem;;
+  padding-bottom: 8px; padding-left: 8px; padding-top: 4px;
+}
+
+.school-panel {
+  padding-left: 8px;
+  padding-top: 8px;
+  margin-bottom: 0px;
+}
+
+.school-panel p {
+  margin-bottom: 8px;
+}
+
+table, th, td { border: 1px solid black }
+
+
