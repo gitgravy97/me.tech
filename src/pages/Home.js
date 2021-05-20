@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
+import Selfie from '../images/selfie_fa2020.jpeg'
+
 const Home = () => {
     useEffect(() => {document.title = "Home"})
 
@@ -13,7 +15,8 @@ const Home = () => {
             <h1 className="page-title">Welcome</h1>
             <Row>
                 <Col sm={3} md={3} lg={3} xl={3}>
-                    <img src="/selfie_fa2020.jpeg" alt="selfie" className="img-fluid" ></img>
+                    <img src={Selfie} alt="selfie" className="img-fluid" ></img>
+
                 </Col>
                 <Col sm={9} md={9} lg={9} xl={9}>
                     <p> Hey there, my name is McCoy and I'm a recent graduate from the University of Michigan in 

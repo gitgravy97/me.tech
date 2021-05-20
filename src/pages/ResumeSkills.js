@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import {Document, Page, pdfjs} from 'react-pdf';
 import { useWindowWidth } from '@wojtekmaj/react-hooks';
 
+import Resume from '../images/Resume-McCoyDoherty.pdf'
+
 // This is a requirement for the renderer to work
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -9,6 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 // https://react-pdf.org/styling
 // https://github.com/wojtekmaj/react-pdf/issues/129
 // https://www.npmjs.com/package/@wojtekmaj/react-hooks
+
 
 const ResumeSkills = () => {
     useEffect(() => {document.title = "Resume/Skills"}) 
@@ -55,7 +58,7 @@ const ResumeSkills = () => {
             <h1>Resume</h1>
             <p>Downloadable version <a href="Resume-McCoyDoherty.pdf">here</a></p>
             <div style={{border: '2px solid black'}}>
-                <Document file="Resume-McCoyDoherty.pdf" style={{display: 'none'}}>
+                <Document file={Resume} style={{display: 'none'}}>
                     <Page pageNumber={1} width={Math.min(width * 0.9, 1800)}/>
                 </Document>
             </div>

@@ -4,6 +4,10 @@ import React, {useEffect} from 'react'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 
+import RAJunior from '../images/stockwellStaffJuniorYr.jpg'
+import RASummer from '../images/stockwellStaffSummer.jpg'
+
+
 const Work = () => {
     useEffect(() => {document.title = "Work Experience"})
 
@@ -97,11 +101,11 @@ const Work = () => {
 
             <Row>
                 <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                <img src="/stockwellStaffJuniorYr.jpg" alt="Stockwell Staff" 
+                <img src={RAJunior} alt="Stockwell Staff" 
                     className='img-fluid'></img>
                 </Col>
                 <Col xs={6} sm={6} md={6} lg={6} xl={6}>
-                <img src="/stockwellStaffSummer.jpg" alt="Stockwell Summer Staff" 
+                <img src={RASummer} alt="Stockwell Summer Staff" 
                     className='img-fluid'></img>
                 </Col>
                 

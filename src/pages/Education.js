@@ -7,6 +7,8 @@ import Collapsible from 'react-collapsible';
 // https://www.npmjs.com/package/react-collapsible
 // https://github.com/glennflanagan/react-collapsible/blob/develop/example/src/sass/components/_Collapsible.scss
 
+import GoBlue from '../images/go_blue_long.jpg'
+
 const Education = () => {
     useEffect(() => {document.title = "Education"})
 
@@ -14,7 +16,7 @@ const Education = () => {
         <div>
             
             <h1 className="page-title">Education page</h1>
-            <img src="/go_blue_long.jpg" alt="Michigan Go Blue" className='img-fluid'></img>
+            <img src={GoBlue} alt="Michigan Go Blue" className='img-fluid'></img>
 
             <div>
                 <h2>Collegiate Studies</h2>
