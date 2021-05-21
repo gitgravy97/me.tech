@@ -48,15 +48,141 @@ const Projects = () => {
 
             <h2><u>Past Projects</u></h2>
 
-            <ul>
-                <li>712 Sentiment Project</li>
-                <li>650 Job Search Engine</li>
-                <li>579 DAW Project</li>
-                <li>671 Amazon Fraud Reviews</li>
-                <li>699 Capstone Project</li>
-            </ul>
+            <div className="project-panel">
+                <h3>Cross-Community Entity-Level Sentiment Analysis</h3>
+                <p>
+                    As a term project for a course on NLP with emphasis on healthcare 
+                    research, I wanted to try working with the idea of entity-level 
+                    text sentiment through the scope of comparing across online 
+                    communities. Our main goal was to build flexible tooling for the overall 
+                    NLP task and to run it on something healthcare-related for the course 
+                    project so, once we figured out Reddit data collection, my partner and 
+                    I scraped data from multiple subreddits focused in one of three categories, 
+                    specifically mental health, drug cessation // moderation, or drug usage.
+                </p>
+                <p>
+                    Once we had a reasonably large sample of posts from each community, we 
+                    traversed the "comment forests" (list of comment trees) to get more data,
+                    tagged all of the post/comment text based on subreddit of origination, 
+                    passed each through a Google Cloud NLP API for handling sentiment analysis,
+                    and cached the results. We would have wrote a custom entity recognizer but
+                    frankly we were curious what it actually looks like to use one of the cloud 
+                    services like IBM and Google provide.
+                </p>
+                <p>
+                    Once we had all of the text analyzed // entities extracted, we wrote 
+                    some code to aggregate and average varied expressions of a given target 
+                    expression using RegEx, so we could aggregate similar expressions like 
+                    "therapy" or "therapist" if our intention was to use entity-level sentiment 
+                    aggregation to get sentiment for a concept more than just a word. 
+                </p>
+            </div>
+            <hr/>
 
+            <div className="project-panel">
+                <h3>"Git-Job" - A Search Engine Project</h3>
+                <p>
+                    For my graduate Information Retrieval / Search Engines course term 
+                    project, my friend and I wanted to specifically try doing something in 
+                    the job-search space, especially specialized around tech positions.
+                    We started by scraping LinkedIn job postings for an array of different titles, 
+                    approximately 20-30, taking about 200 listings each.
+                </p>
+                <p>
+                    We then experimented with a few different sorting algorithms, especially
+                    variants on BM25, to see how they would perform with different input, 
+                    and realized that we wanted to try extracting just technical frameworks and 
+                    languages from application document bodies to experiment with how performance 
+                    would look when just passing in title and extracted skills, which made us 
+                    go and train a customized named-entity-recognition system.
+                </p>
+                <p>
+                    While our performance ultimately seemed subjectively quite good, we realized 
+                    that we made an error in our annotation process out of our inexperience with 
+                    data annotation and it being our first full-scale search engine, basically in 
+                    that the queries we annotated for weren't sufficiently specific enough to reflect 
+                    improvement in specific areas we had hoped to improve on compared to LinkedIn's 
+                    search process.
+                </p>
+                <p>
+                    While we intended to make some kinda of actual web interface for this, 
+                    the final project ended up being a python script / CLI application 
+                    because of time constraints / other Finals Season obligations.
+                </p>
+            </div>
+            <hr/>
 
+            <div className="project-panel">
+                <h3>Fun with Browser Audio</h3>
+                <p>
+                    For a javascript-focused course on web development, I decided to try to 
+                    get some experience working with bootstrap and with browser audio so, 
+                    using Tone.js, I built out an audio application that would let users 
+                    plat sounds through a few different instrument voicings across a few
+                    octaves.
+                </p>
+                <p>
+                    I also had to give a lecture on how the library worked, so I made a
+                    panel of buttons at the top of the page to demonstrate different 
+                    affordances of the library. Due to some kinks with cross-origin resource 
+                    sharing, some of the buttons were only working locally with resources 
+                    I was sharing via an Express server, but it worked well enough for the 
+                    class demonstration at least.
+                </p>
+                <p>
+                    Ultimately I'd like to build this into something that's more like a 
+                    creative tool people could use to make music, and most of the pieces 
+                    seem to be there for building that out in the future, but for now 
+                    I have to focus my efforts on other work. 
+                </p>
+                <p>
+                    Accessible: <a href="https://msdoherty.github.io/si579_daw_project/">here</a>
+                </p>
+            </div>
+            <hr/>
+
+            <div className="project-panel">
+                <h3>Mining for Consumer Review Fraud on Amazon</h3>
+                <p>
+                    After seeing multiple negative reviews alleging review fraud in the 
+                    review section of Amazon product listings, I wanted to see if it would 
+                    be possible to distinguish the text of fake product reviews from legitimate 
+                    ones.
+                </p>
+                <p>
+                    I found an annotated dataset of Amazon reviews, which included a field 
+                    indicating fraudulent status and got to work engineering features with 
+                    Pandas and building models with SKLearn. Some of the most important 
+                    features ended up being token length, unique word count, adjective 
+                    and proper noun count, linebreaks, containing url or photo components, 
+                    product category (Beauty, Furnigure, etc.), and certain keywords like 
+                    "real" or "smell" which I looked into after doing some literature review.
+                </p>
+                <p>
+                    End-performance came out pretty reasonable, with recall scores near 90 
+                    while maintaining F1 scores in the low-to-mid 80's, as well as one 
+                    99%+ recall SGD model that we ended up not submitting because of having
+                    just really awful precision.
+                </p>
+            </div>
+            <hr/>
+
+            <div className="project-panel">
+                <h3>Predictive Music Popularity</h3>
+                <p>
+                    For a capstone course project, my partners and I decided to work on
+                    exploring whether or not we could accurately project musical popularity.
+                    We samples records from the Million Song Database, ~32k due to API rate 
+                    limiting, and ran the song titles through Spotify's Search API, using a 
+                    thresholded Jaro-Winkler similarity score to ensure matching records, 
+                    which were used to then gather extended features through secondary calls 
+                    to Spotify's Audio Features API. We then tried an array of modeling approaches
+                    and ultimately ended up achieving our best performance using SMOGN to offset
+                    the class imbalance. At the time of submission, we achieved an MAE of ~6.809 
+                    with SMOGN and a gridsearch-tuned random forest model. 
+                </p>
+            </div>
+            <hr/>
 
             <div className="project-panel">
                 <h3>Boston Health Inspection Projection</h3>

@@ -56,7 +56,7 @@ const ResumeSkills = () => {
             </table>
 
             <h1>Resume</h1>
-            <p>Downloadable version <a href="Resume-McCoyDoherty.pdf">here</a></p>
+            <p>Downloadable version <a href="Resume-McCoyDoherty.pdf" download>here</a></p>
             <div style={{border: '2px solid black'}}>
                 <Document file={Resume} style={{display: 'none'}}>
                     <Page pageNumber={1} width={Math.min(width * 0.9, 1800)}/>

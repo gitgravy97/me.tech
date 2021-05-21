@@ -7,7 +7,7 @@ import Collapsible from 'react-collapsible';
 // https://www.npmjs.com/package/react-collapsible
 // https://github.com/glennflanagan/react-collapsible/blob/develop/example/src/sass/components/_Collapsible.scss
 
-import GoBlue from '../images/go_blue_long.jpg'
+import GoBlue from '../images/GoBlue.jpg'
 
 const Education = () => {
     useEffect(() => {document.title = "Education"})
@@ -38,7 +38,7 @@ const Education = () => {
 
             <div>
                 <h2>Graduate Coursework</h2>
-                <Collapsible trigger="Applied Machine Learning">
+                <Collapsible trigger="Applied Machine Learning" tabIndex={7}>
                     <p>
                         A course that gave me a deeper and more-focused exposure to machine learning,
                         covering topics including:
@@ -57,7 +57,7 @@ const Education = () => {
                         and we also covered a bit of deep learning.
                 </Collapsible>
 
-                <Collapsible trigger="Consulting // Contextual Inquiry">
+                <Collapsible trigger="Consulting // Contextual Inquiry" tabIndex={8}>
                     <p>
                         A course that taught us approaches to consulting and client management, while 
                         paired up into groups with a real-world client for a semester-long project.
@@ -80,7 +80,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Capstone (Project Course)">
+                <Collapsible trigger="Capstone (Project Course)" tabIndex={9}>
                     <p>
                         A group-project-based course for terminal Masters students to 
                         independently propose and implement a project, as well as practice
@@ -102,7 +102,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
             
-                <Collapsible trigger="Databases">
+                <Collapsible trigger="Databases" tabIndex={10}>
                     <p>
                         A course that focused entirely on databases and SQL, including data
                         modeling, normalization, datatypes, components of SQL clauses, 
@@ -115,7 +115,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Data Mining">
+                <Collapsible trigger="Data Mining" tabIndex={11}>
                     <p>
                         This was basically a course where each week we focused on a different
                         type of data, discussed what made them unique, and what approaches could
@@ -124,7 +124,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Entrepreneurship: Compensation & Ownership">
+                <Collapsible trigger="Entrepreneurship: Compensation & Ownership" tabIndex={12}>
                     <p>
                         A business course that focused on understanding compensation and equity in 
                         startup environments, as well as how to build a capitalization table to 
@@ -139,7 +139,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Information Retrieval (Search Engines)">
+                <Collapsible trigger="Information Retrieval (Search Engines)" tabIndex={13}>
                     <p>
                         A course on information retrieval and search engines, which went into various
                         IR topics including indexing, ranking algorithms, evaluation in IR/search systems,
@@ -148,7 +148,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Interactive Application Development">
+                <Collapsible trigger="Interactive Application Development" tabIndex={14}>
                     <p>
                         A continuation of web development curriculum that focused more on the Javascript 
                         side of development, including callbacks, DOM manipulation, integrating libraries,
@@ -157,7 +157,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
             
-                <Collapsible trigger="Natural Language Processing (NLP)">
+                <Collapsible trigger="Natural Language Processing (NLP)" tabIndex={15}>
                     <p>
                         This was a course that focused on introduction and exploration of topics and issues
                         in natural language processing, with an emphasis on applications in healthcare 
@@ -168,7 +168,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Servers & Shells">
+                <Collapsible trigger="Servers & Shells" tabIndex={16}>
                     <p>
                         A course I took because, despite using Git, Github, and command-line interfaces
                         reasonably frequently, I felt it would be nice to have a more formal exposure.
@@ -183,7 +183,8 @@ const Education = () => {
                 <h2>Undergraduate Coursework</h2>
                 <p>(A non-exhaustive list)</p>
 
-                <Collapsible trigger="Algorithms // Methods for Information Processing">
+                <Collapsible trigger="Algorithms // Methods for Information Processing" 
+                    tabIndex={17}>
                     <p>A really diverse pool of cool topics including:</p>
                     <ul>
                         <li>
@@ -206,7 +207,8 @@ const Education = () => {
                     </ul>
                 </Collapsible>
 
-                <Collapsible trigger="Consulting: Information Environments & Work">
+                <Collapsible trigger="Consulting: Information Environments & Work" 
+                    tabIndex={18}>
                     <p>
                         A course we all had to take on program admission, which taught a blent of
                         consulting foundations, discussion of different software development life cycle
@@ -219,14 +221,14 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Database-Driven Web Applications (Django)">
+                <Collapsible trigger="Database-Driven Web Applications (Django)" tabIndex={19}>
                     <p>
                         A course that focused on how to develop web applications using Python and
                         the Django library. Basically, developing CRUD apps in MCV form.
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Data Manipulation">
+                <Collapsible trigger="Data Manipulation" tabIndex={20}>
                     <p>
                         Course focused on approaches to data manipulation, scalability, and 
                         further continuation of API and database curriculum. Topics included:
@@ -244,7 +246,8 @@ const Education = () => {
                     </ul>
                 </Collapsible>
 
-                <Collapsible trigger="Data Structures // Intermediate Programming">
+                <Collapsible trigger="Data Structures // Intermediate Programming" 
+                    tabIndex={21}>
                     <p>
                         An intermediate programming course that focused heavily on principles of
                         object-oriented programming, databasing, and caching. This course also served 
@@ -257,7 +260,8 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Entrepreneurship: Finding Your Venture">
+                <Collapsible trigger="Entrepreneurship: Finding Your Venture" 
+                    tabIndex={22}>
                     <p>
                         An elective course targeted at non-business-majors to give those of us interested
                         in entrepreneurial ventures a more formal overview of what the process of starting
@@ -267,7 +271,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Exploratory Data Analysis">
+                <Collapsible trigger="Exploratory Data Analysis" tabIndex={23}>
                     <p>
                         A course that was basically a 1/3rd-1/3rd-1/3rd mix of statistics, data 
                         visualization (MatPlotLib, Seaborn, etc.), and introductory machine learning .
@@ -276,7 +280,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="German Through News Media">
+                <Collapsible trigger="German Through News Media" tabIndex={24}>
                     <p>
                         This was my final German course and it was really uniquely interesting in that,
                         each week we would come into class and vote on 1-2 topics currently in either
@@ -287,7 +291,8 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Graphic Design & Visual Communication">
+                <Collapsible trigger="Graphic Design & Visual Communication" 
+                    tabIndex={25}>
                     <p>
                         Effectively a 50-50 crash course that focused half of the time on the theory
                         of graphic design and visual communication, and half of the time on hands-on
@@ -299,7 +304,8 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Introduction to Information Studies">
+                <Collapsible trigger="Introduction to Information Studies" 
+                    tabIndex={26}>
                     <p>
                         This was one of the two informatics-department courses required to apply
                         for the BS Information Science program, and it focused on teaching students
@@ -314,7 +320,8 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Online Communities: Development, Research, and Analysis">
+                <Collapsible trigger="Online Communities: Development, Research, and Analysis"
+                    tabIndex={27}>
                     <p>
                         A course that focused entirely on social media and online communities,
                         exploring the formation, evolution, maintenance, psychology, and mechanics
@@ -331,7 +338,8 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Programs, Information, & People // Introductory Programming">
+                <Collapsible trigger="Programs, Information, & People // Introductory Programming"
+                    tabIndex={28}>
                     <p>
                         This was one of the two informatics-department courses required to apply
                         for the BS Information Science program, and it focused on teaching students
@@ -347,7 +355,8 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Psychology of Persuasion & Social Influence">
+                <Collapsible trigger="Psychology of Persuasion & Social Influence" 
+                    tabIndex={29}>
                     <p>
                         A course that explored various components of human psychology with a focus on how
                         individuals process social information in ways that impact their thoughts and actions.
@@ -356,7 +365,8 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Senior Capstone // Client-Based Course">
+                <Collapsible trigger="Senior Capstone // Client-Based Course"
+                    tabIndex={30}>
                     <p>
                         A year-long capstone course sequence where I was paired with a student-group
                         and real-world client, specifically an corporate unemployment-insurance firm 
@@ -376,7 +386,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="User Modeling // Behavioral Economics">
+                <Collapsible trigger="User Modeling // Behavioral Economics" tabIndex={31}>
                     <p>
                         A course that focused on how modern data collection and economics can 
                         strategically collide to profile economic behaviors and drive business
@@ -386,7 +396,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Video Game Audio // Music">
+                <Collapsible trigger="Video Game Audio // Music" tabIndex={32}>
                     <p>
                         An elective course directed at non-music-majors to discuss the study of 
                         audio effects and music in videogames and experiential art forms. It was
@@ -398,7 +408,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="Web Development & Accessibility">
+                <Collapsible trigger="Web Development & Accessibility" tabIndex={33}>
                     <p>
                         Elective course for informatics students focusing on introducing web development
                         and accessibility. We learned about HTML, CSS, vanilla (ES6) Javascript, just a 
@@ -407,7 +417,7 @@ const Education = () => {
                     </p>
                 </Collapsible>
 
-                <Collapsible trigger="3D Modeling & Animation">
+                <Collapsible trigger="3D Modeling & Animation" tabIndex={34}>
                     <p>
                         An elective course for non-art-majors to get introduced to 3D modeling and 
                         animation with Autodesk software, primarily Autodesk 3DS Max. We learned about

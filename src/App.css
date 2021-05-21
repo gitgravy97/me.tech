@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.navTab {
+  color: '#FFFFFF';
+  display: 'none';
+  padding-top: '5px'; padding-bottom: '5px';
+  padding-left: '15px'; padding-right: '15px';
+}
+
 .App-header {
   background-color: #282C34;
   min-height: 100vh;
@@ -98,5 +105,4 @@ div hr {
 }
 
 table, th, td { border: 1px solid black }
-
 

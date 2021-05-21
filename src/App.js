@@ -1,7 +1,8 @@
 import './App.css';
 
 import {
-  BrowserRouter as Router,
+  //BrowserRouter as Router,
+  HashRouter as Router,
   Switch, Route, Link
 } from "react-router-dom"
 
@@ -24,18 +25,19 @@ import Row from 'react-bootstrap/Row'
 
 const App = () => {
 
-  const padding = {padding: 5}
+  const navTab = {color: '#FFFFFF', paddingLeft: '15px', paddingRight: '15px', 
+    paddingTop: '5px', paddingBottom: '5px'}
 
   return (
     <Container fluid>
       <Router >
-        <Row style={{margin:'0px'}}>
-          <Link style={padding} to="/">Home</Link>
-          <Link style={padding} to="/education">Education</Link>
-          <Link style={padding} to="/work">Work Experience</Link> 
-          <Link style={padding} to="/projects">Projects</Link>
-          <Link style={padding} to="/resume-skills">Resume/Skills</Link>
-          <Link style={padding} to="/bucketlist">Bucketlist</Link>
+        <Row style={{backgroundColor: '#333333', margin:'0px', marginTop:'1px'}}>
+          <Link tabIndex={1} className="navTab" style={navTab} to="/">Home</Link>
+          <Link tabIndex={2} className="navTab" style={navTab} to="/education">Education</Link>
+          <Link tabIndex={3} className="navTab" style={navTab} to="/work">Work Experience</Link> 
+          <Link tabIndex={4} className="navTab" style={navTab} to="/projects">Projects</Link>
+          <Link tabIndex={5} className="navTab" style={navTab} to="/resume-skills">Resume/Skills</Link>
+          <Link tabIndex={6} className="navTab" style={navTab} to="/bucketlist">Bucketlist</Link>
         </Row>
 
         <Switch>
@@ -58,11 +60,6 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
-
-        <div>
-          <hr/>
-          <i>footer goes here</i>
-        </div>
       </Router>
     </Container>
   )
